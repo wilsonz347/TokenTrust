@@ -124,6 +124,7 @@ def main():
             st.plotly_chart(fig)
 
         with col2:
+            st.write("### Sample Email Messages")
             st.markdown("""
                 <style>
                 .scrollable-container {
@@ -149,11 +150,13 @@ def main():
                 scrollable_content += "<hr>"
             scrollable_content += "</div>"
 
+            # Render the HTML inside Streamlit
+            st.markdown(scrollable_content, unsafe_allow_html=True)
+            st.write("---")
+
             if st.button("Refresh"):
                     st.session_state.samples = df.sample(sample_size)
 
-            # Render the HTML inside Streamlit
-            st.markdown(scrollable_content, unsafe_allow_html=True)
 
 
     elif page == "Disclaimer":
