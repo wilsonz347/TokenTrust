@@ -21,6 +21,6 @@ Spam Mail Predictor is a Streamlit-based web application that uses machine learn
 https://wilsonz347-tokentrust-app-eiiw0w.streamlit.app/
 
 ## Setup and Installation
-1. Clone the repository: git clone git@github.com:wilsonz347/TokenTrust.git
+1. Clone the repository: git clone git@github.com wilsonz347/TokenTrust.git
 2. Download all dependencies from requirements.txt: pip install -r requirements.txt
 3. Run streamlit by the following command: streamlit run app.py
